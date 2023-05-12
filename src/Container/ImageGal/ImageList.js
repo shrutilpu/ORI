@@ -64,7 +64,7 @@ const ImageList = () => {
     };
   }, []);
 
-  // fetch data on page load
+  // fetch data on page load && change of pagination. 
   useLayoutEffect(()=>{
     if(!data.loading)getData();
   },[pagination])
